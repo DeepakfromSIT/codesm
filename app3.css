@@ -1,0 +1,360 @@
+/* for (let i=1; i<=50; i++){
+    console.log(i);
+}
+
+
+for(let i=10; i>=1; i--) {
+    console.log(i);
+
+} */
+
+/* Print odd no */
+
+/* for(let i=1; i<=15; i=i+2){
+    console.log(i);
+}
+
+
+
+for(let i=15; i>=1; i=i-2){
+    console.log(i);
+}
+ */
+
+/* Print even no. */
+
+/* for(let i=3; i<=30; i=i+3) {
+    console.log(i);
+}
+
+
+infinite loop  */
+/* for(let i=1; i<=5; i--){
+    console.log(i);
+} */
+
+/* 
+for(let i=5; i<=50; i=i+5){
+    console.log(i);
+} */
+
+/* 
+let n = prompt("Enter number");
+n = parseInt(n);
+for(let i=n; i<=n*15; i=i+n ){
+    console.log(i);
+} */
+
+/* 
+for(let i=1; i<=3; i++){
+    console.log(` Outer loop ${i}`);
+    for(let j=1; j<=5
+    ; j++){
+        console.log(j);
+    }
+} */
+
+/* 
+let i=1;
+while(i<=5){
+    console.log(i);
+    i++;
+} */
+
+/* 
+let i=2;
+while(i<=20){
+    console.log(i);
+    i=i+2;
+} */
+
+/* Movie selection by the hepl if While loop. */
+/* const favMovie = "avatar";
+
+let guess = prompt("Enter movies name");
+
+while( (guess != favMovie) ) {
+    if(guess == "quit") {
+        console.log("You quit")
+        break;
+    }
+    guess = prompt("try again");
+}
+
+if (guess == favMovie) {
+    console.log("Congrats");
+} */
+
+/* let i = 1;
+while(i<=5) {
+    if(i==4){
+        break;
+    }
+    console.log(i);
+    i++;
+} */
+
+/* let fruits =["ma","app","ban","lit","pin"]
+for(let i=fruits.length-1; i>=0; i=-2){
+    console.log(i, fruits[i]);
+} */
+
+/* let heroes = [["ironman","spiderman","thor"],["superman","wonder woman","flash"]];
+for (let i=0; i<heroes.length; i++){
+    console.log(i,heroes[i], heroes[i].length);
+
+    for(let j=0; j<heroes[i].lenght; j++) {
+        console.log(`j=${j}, ${heroes[i][j]}`);
+    }
+} */
+
+/* 
+
+
+let fruits =["mango","banana","litchi","orange"];
+
+for(fruit of fruits){
+    console.log(fruit);
+}
+
+
+
+
+for(char of "Apna Bhai"){
+    console.log(char);
+} */
+
+/* 
+let heroes = [["Spi","Sup","Ant"],["Bat","Cat","Dog"]];
+for(hero of heroes){
+    for(names of hero){
+        console.log(names);
+    }
+} */
+
+
+
+
+/* TODO APP */
+/* let todo = [];
+
+let req = prompt("Please enter your request");
+
+while(true) {
+    if(req == "quit"){
+        console.log("quitting app");
+        break;
+    }
+
+
+    if (req == "list") {
+        console.log("------------");
+        for(let i=0; i<todo.length; i++) {
+            console.log(i,todo[i]);
+        }
+        console.log("------------");
+    }  else if(req == "add"){
+        let task = prompt("please enter the task you want to add");
+        todo.push(task);
+        console.log("task added");
+    } else if (req == "delete"){
+        let idx = prompt("please enter the task index");
+        todo.splice(idx, 1);
+        console.log("task deleted");
+    } else {
+        console.log("wrong request");
+    }
+     req = prompt("Please enter your request");
+
+} */
+
+
+
+
+
+/* Pratice Question */
+
+
+
+ /* let arr = [1,2,3,4,5,6,2,3];
+let num = 5;
+
+for(let i=0; i<arr.length; i++){
+    if(arr[i] == num){
+        arr.splice(i,1);
+    }
+}
+console.log(arr);  */
+
+
+
+/* let number = 287152;
+let count = 0;
+
+let copy = number;
+while(copy > 0) {
+    count++;
+    copy = Math.floor(copy/10);
+}
+console.log(count); */
+
+
+
+
+
+/* 
+let number = 287152;
+let sum = 0;
+
+let copy = number;
+while(copy > 0) {
+    digit = copy % 10;
+    sum += digit;
+    copy = Math.floor(copy/10);
+}
+console.log(sum); */
+
+
+
+
+
+
+/* let n = prompt("Enter the no");
+let fact = 1;
+
+if (n == 0){
+    console.log(`The factorial of${n} is 1`);
+}
+else if (n < 0){
+    console.log(`The factorial of${n} is not  define`);
+}
+else{
+    for(let i=1; i<=n; i++){
+        fact = fact*i;
+        console.log(fact);
+    }
+} */
+
+
+
+
+
+/* let arr = [2,5,10,2,7,1,9];
+let largest = 0;
+
+for(let i=0; i<=arr.length; i++) {
+    if(largest < arr[i] ) {
+        largest = arr[i];
+    }
+}
+console.log(largest); */
+
+
+/* 
+
+let student = {
+    name:"Deepak",
+    age:23,
+    city:"haldwani",
+    marks:63
+};
+
+let student2 = ["Deepak","23","haldwani","63"]; */
+
+
+
+/* const post = {
+    username:"@Kamal",
+    content:"This is my #firstPost",
+    likes:150,
+    repost:5,
+    tags:["ApnaCollege","Delta"]
+}; */
+
+
+
+
+
+/* const qbj = {
+    1:"a",
+    2:"b",
+    null:"c",
+    undefined:"d",
+    true:"e",
+    false:"g",
+    a:"k"
+}; */
+
+
+
+/* const student = {
+    name:"Suman",
+    age:23,
+    marks:65,
+    city:"Delhi"
+}; */
+
+/* 
+const classInfo = {
+    aman: {
+        grade:"A",
+        city:"Delhi"
+
+    },
+    chaman: {
+        grade:"B",
+        city: "Hal"
+    },
+    boy: {
+        grade:"D",
+        city:"pune"
+    }
+}; */
+
+
+/* 
+const classInfo = [
+    {
+        name:"aman",
+        city:"A"
+    },
+    {
+        name:"Karan",
+        city:"B"
+    },
+    {
+        name:"kapil",
+        city:"C"
+    }
+]; */
+
+
+
+
+
+
+/* GAME TO CHOOSEN A NO  */
+
+const max = prompt("Enter the max number");
+
+const random = Math.floor(Math.random() * max) + 1;
+
+let guess = prompt("guess the number");
+
+while(true) {
+    if(guess == "quit") {
+        console.log("user quit");
+        break;
+    }
+
+    if(guess == random) {
+        console.log("you are right ! congrats! random number wass", random);
+        break;
+    }  
+    else if (guess < random) {
+        guess = prompt("your guess was too small. please try again");
+    } 
+    else {
+       guess = prompt("your guess was to large, please try again");
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style9.css" />
+    <script>
+      const validateInput = (inputField) => {
+        const regex = /^[a-zA-Z]/;
+        const inputValue = inputField.value;
+
+        if (!regex.test(inputValue)) {
+          alert("please enter only alphabetic charaters (A-Z , a-z).");
+          inputField.value = "";
+        } else console.log(inputValue);
+      };
+    </script>
+  </head>
+  <body>
+    <!-- <button id="btn">Click Me!</button> -->
+
+    <!-- <h2>This is the Box</h2>
+    <!-- <input type="text" placeholder="enter your name" id="input" /> -->
+
+    <!-- <input
+      type="text"
+      id="input"
+      name="country_code"
+      pattern="[A-Za-z]"
+      title="Three letter country code"
+    /> -->
+
+    <!-- <div>
+      <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </ul>
+    </div> -->
+
+    <!-- <h1>Todo App</h1>
+    <input placeholder="enter tour task" />
+    <button>Add Task</button>
+    <ul>
+      <li>Eat <button class="delete">delete</button></li>
+      <li>Sleep <button class="delete">delete</button></li>
+    </ul> -->
+
+    <!-- //Third question -->
+
+    <label for="alphabeticInput"> Enter alphabetic Characters:</label>
+    <input type="text" id="alphabeticInput" onchange="validateInput(this)" />
+
+    <script src="DOM9.js"></script>
+  </body>
+</html>
